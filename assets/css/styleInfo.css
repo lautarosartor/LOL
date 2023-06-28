@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header img {
+    text-align: center;
+    transition: all 0.5s;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    width: 100%;
+    min-height: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    height: 40px;
+    padding: 5px;
+    text-align: right;
+    text-decoration: none;
+    border: 2px solid #d5af6c;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #d5af6c;
+    box-shadow: -5px 5px 10px #09859c;
+    background-color: #00465f;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: #00465f;
+    background-color: #d5af6c;
+}
+
+.active {
+    background-color: #3ab5ba;
+    color: #000;
+    border: 2px solid #00465f;
+}
+
+main {
+    background-color: #cebb8c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+main h1 {
+    width: 100%;
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container p {
+    width: 90%;
+    text-align: justify;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container img {
+    float: right;
+    box-shadow: -5px 5px 5px #3ab5ba;
+    border-radius: 0px 10% 0px 0px;
+    margin: 0 0px 15px 15px;
+    width: 50%;
+    max-width: 50%;
+    min-width: 250px;
+}
+
+footer {
+    height: auto;
+    background-color: #00465f;
+    text-align: center;
+    padding: 10px;
+}
+
+footer i {
+    font-size: 30px;
+    color: #3ab5ba;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+footer i:hover {
+    text-shadow: 0px 0px 5px #d5af6c;
+}

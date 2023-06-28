@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styleCharacters.css">
+    <link rel="icon" href="./assets/img/icono.png" type="image/x-icon">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     --><script src="https://kit.fontawesome.com/274b553a30.js" crossorigin="anonymous"></script>
+    <title>League Of Legends - Campeones</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo.png" alt="LOGO">
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a class="active" href="./characters.html">Campeones</a>
+            <a href="./info.html">Información</a>
+            <a href="./contact.html">Contacto</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Campeones</h1>
+        <div id="filtro">
+            <label for="filtro-roles">Filtrar por rol:</label>
+            <select id="filtro-roles">
+                <option value="todos">Todos</option>
+                <option value="asesino">Asesino</option>
+                <option value="luchador">Luchador</option>
+                <option value="mago">Mago</option>
+                <option value="tirador">Tirador</option>
+                <option value="soporte">Soporte</option>
+                <option value="tanque">Tanque</option>
+            </select>
+        </div>
+        <div id="card-template"></div>
+        <!-------------------------------------------->
+        <!-- <div class="row row-cols-1 row-cols-md-2 g-4" id="card-template">
+            cards generadas con js
+        </div> -->
+        <!-- <section class="tanque">
+            <img src="./assets/img/Campeones/cho'gath.jpg" alt="Cho'gat">
+            <div>
+                <h2>Cho'Gat</h2>
+            </div>
+        </section>
+        <section class="luchador">
+            <img src="./assets/img/Campeones/Jarvan IV.jpg" alt="Jarvan IV">
+            <div>
+                <h2>Jarvan IV</h2>
+            </div>
+        </section>
+        <section class="mago">
+            <img src="./assets/img/Campeones/viktor.jpg" alt="Viktor">
+            <div>
+                <h2>Viktor</h2>
+            </div>
+        </section>
+        <section class="tirador">
+            <img src="./assets/img/Campeones/jinx.jpg" alt="Jinx">
+            <div>
+                <h2>Jinx</h2>
+            </div>
+        </section>
+        <section class="mago">
+            <img src="./assets/img/Campeones/brand.jpg" alt="Brand">
+            <div>
+                <h2>Brand</h2>
+            </div>
+        </section>
+        <section class="asesino">
+            <img src="./assets/img/Campeones/zed.jpg" alt="Zed">
+            <div>
+                <h2>Zed</h2>
+            </div>
+        </section>
+        <section class="tanque">
+            <img src="./assets/img/Campeones/sion.jpg" alt="Sion">
+            <div>
+                <h2>Sion</h2>
+            </div>
+        </section>
+        <section class="luchador">
+            <img src="./assets/img/Campeones/lee sin.jpg" alt="Lee Sin">
+            <div>
+                <h2>Lee Sin</h2>
+            </div>
+        </section>
+        <section class="tanque">
+            <img src="./assets/img/Campeones/alistar.jpg" alt="Alistar">
+            <div>
+                <h2>Alistar</h2>
+            </div>
+        </section>
+        <section class="soporte">
+            <img src="./assets/img/Campeones/nami.jpg" alt="Nami">
+            <div>
+                <h2>Nami</h2>
+            </div>
+        </section>
+        <section class="luchador">
+            <img src="./assets/img/Campeones/amumu.jpg" alt="Amumu">
+            <div>
+                <h2>Amumu</h2>
+            </div>
+        </section>
+        <section class="luchador">
+            <img src="./assets/img/Campeones/darius.jpg" alt="Darius">
+            <div>
+                <h2>Darius</h2>
+            </div>
+        </section>
+        <section class="mago">
+            <img src="./assets/img/Campeones/annie.jpg" alt="Annie">
+            <div>
+                <h2>Annie</h2>
+            </div>
+        </section>
+        <section class="tirador">
+            <img src="./assets/img/Campeones/vayne.jpg" alt="Vayne">
+            <div>
+                <h2>Vayne</h2>
+            </div>
+        </section>
+        <section class="mago">
+            <img src="./assets/img/Campeones/cassiopeia.jpg" alt="Cassiopeia">
+            <div>
+                <h2>Cassiopeia</h2>
+            </div>
+        </section>
+        <section class="tanque">
+            <img src="./assets/img/Campeones/blitzcrank.jpg" alt="Blitzcrank">
+            <div>
+                <h2>Blitzcrank</h2>
+            </div>
+        </section>
+        <section class="soporte">
+            <img src="./assets/img/Campeones/janna.jpg" alt="Janna">
+            <div>
+                <h2>Janna</h2>
+            </div>
+        </section>
+        <section class="tirador">
+            <img src="./assets/img/Campeones/graves.jpg" alt="Graves">
+            <div>
+                <h2>Graves</h2>
+            </div>
+        </section>
+        <section class="tanque">
+            <img src="./assets/img/Campeones/leona.jpg" alt="Leona">
+            <div>
+                <h2>Leona</h2>
+            </div>
+        </section>
+        <section class="asesino">
+            <img src="./assets/img/Campeones/yasuo.jpg" alt="Yasuo">
+            <div>
+                <h2>Yasuo</h2>
+            </div>
+        </section>
+        <section class="asesino">
+            <img src="./assets/img/Campeones/talon.jpg" alt="Talon">
+            <div>
+                <h2>Talon</h2>
+            </div>
+        </section>
+        <section class="tanque">
+            <img src="./assets/img/Campeones/gnar.jpg" alt="Gnar">
+            <div>
+                <h2>Gnar</h2>
+            </div>
+        </section>
+        <section class="tanque">
+            <img src="./assets/img/Campeones/garen.jpg" alt="Garen">
+            <div>
+                <h2>Garen</h2>
+            </div>
+        </section>
+        <section class="mago">
+            <img src="./assets/img/Campeones/ahri.jpg" alt="Ahri">
+            <div>
+                <h2>Ahri</h2>
+            </div>
+        </section>
+        <section class="luchador">
+            <img src="./assets/img/Campeones/irelia.jpg" alt="Irelia">
+            <div>
+                <h2>Irelia</h2>
+            </div>
+        </section>
+        <section class="tirador">
+            <img src="./assets/img/Campeones/lucian.jpg" alt="Lucian">
+            <div>
+                <h2>Lucian</h2>
+            </div>
+        </section>
+        <section class="soporte">
+            <img src="./assets/img/Campeones/morgana.jpg" alt="Morgana">
+            <div>
+                <h2>Morgana</h2>
+            </div>
+        </section>
+        <section class="mago">
+            <img src="./assets/img/Campeones/leblanc.jpg" alt="Leblanc">
+            <div>
+                <h2>Leblanc</h2>
+            </div>
+        </section>
+        <section class="mago">
+            <img src="./assets/img/Campeones/vel'koz.jpg" alt="Vel'Koz">
+            <div>
+                <h2>Vel'Koz</h2>
+            </div>
+        </section>
+        <section class="tanque">
+            <img src="./assets/img/Campeones/poppy.jpg" alt="Poppy">
+            <div>
+                <h2>Poppy</h2>
+            </div>
+        </section> -->
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/leagueoflegends/" target="_BLANK"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/LeagueofLegendsES" target="_BLANK"><i class="fa-brands fa-youtube"></i></a>
+        <h4>Todos los derechos reservados &reg;</h4>
+    </footer>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
